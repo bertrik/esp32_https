@@ -55,8 +55,7 @@ static int do_https_post(int argc, char *argv[])
         p += len;
         totalsize += len;
         bufsize -= len;
-    }
-    while (len > 0);
+    } while (len > 0);
     esp_http_client_cleanup(client);
 
     // show contents of rxbuffer
